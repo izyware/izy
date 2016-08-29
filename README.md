@@ -32,7 +32,7 @@ So on MacOS or Linux try: `./ldo.sh help`
 On Windows based platform use: `./ldo.bat help`
 
 ## Module Path Resolution
-When an izy command is run from the command line that will have a loadmodule (ldmod) statement, the platform will try to locate the module on the system by searching the local file system for installed Izy packages in the paths defined in thirdparty/config/kernel/extstores/file.js. Notice that these paths are all relative to the full path of the 'izy' command process. To see what the current resolver configuration type:
+When an izy command is run from the command line that will have a loadmodule (ldmod) statement, the platform will try to locate the module on the system by searching the local file system for installed Izy packages in the paths defined in thirdparty/config/kernel/extstores/file.js. Notice that these paths are all relative to the `anchorpath` of the 'izy' command process. To see the current anchorpath configuration, type:
 
 `izy sysview`
 
